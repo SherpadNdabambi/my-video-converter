@@ -1,0 +1,1 @@
+cp myVideoConverter.sh $PREFIX/bin/myVideoConverter
