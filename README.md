@@ -27,15 +27,21 @@ A simple cli tool written in shell to convert and trim video and audio files usi
 
 1. Clone the repository to a local folder:
 
->>```git clone https://github.com/SherpadNdabambi/my-video-converter.git```
+```sh
+git clone https://github.com/SherpadNdabambi/my-video-converter.git
+```
 
 2. cd into the locally created folder:
 
->>```cd my-video-converter```
+```sh
+cd my-video-converter
+```
 
 3. Run the installation script:
 
->>```./install.sh```
+```sh
+./install.sh
+```
 
 ## Usage
 
@@ -43,11 +49,15 @@ My Video Converter currently supports two operations: convert and trim.
 
 To convert from one format to another:
 
->```myVideoConverter convert [ source file ] [output file ]```
+```sh
+myVideoConverter convert [ source file ] [output file ]
+```
 
 To trim a file:
 
->```myVideoConverter trim [ source file ] [ start time ] [ stop time ]```
+```sh
+myVideoConverter trim [ source file ] [ start time ] [ stop time ]
+```
 
 ### Convert Example
 
@@ -55,7 +65,9 @@ To trim a file:
 
 The following command will convert an MP4 video to an mp3 file:
 
->```myVideoConverter convert my_video.mp4 my_audio.mp3```
+```sh
+myVideoConverter convert my_video.mp4 my_audio.mp3
+```
 
 ### Trim Examples
 
@@ -63,17 +75,23 @@ The following command will convert an MP4 video to an mp3 file:
 
 This command will cut a song from the 4 second mark to the end of the song (i.e. it will trim off the first 4 seconds of the song).
 
->```myVideoConverter trim my_song.mp3 4```
+```sh
+myVideoConverter trim my_song.mp3 4
+```
 
 The output will be saved as my_song-trimmed.mp3 in the same directory as the source file.
 
 #### Example 3: Trim a video from the start to a specific time
 
->```myVideoConverter trim my_video.mp4  0 1:24:32```
+```sh
+myVideoConverter trim my_video.mp4  0 1:24:32
+```
 
 #### Example 4: Trim a video from a specific time to a specific time
 
->```myVideoConverter trim my_video.mp4 0:16:32 1:27:45```
+```sh
+myVideoConverter trim my_video.mp4 0:16:32 1:27:45
+```
 
 ## Known Issues
 
