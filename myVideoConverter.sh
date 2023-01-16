@@ -27,12 +27,12 @@ case $command in
 
 		startTime="$3"
 		if [ -z "$4" ]; then
-			ffmpeg -ss $startTime -i $inputFile -c copy $outputFile
+			ffmpeg -ss $startTime -i "$inputFile" -c copy "$outputFile"
 		else
 			endTime="$4"
-			ffmpeg -ss $startTime -to $endTime -i $inputFile -c copy $outputFile
+			ffmpeg -ss $startTime -to $endTime -i "$inputFile" -c copy "$outputFile"
 		fi
-		;;
+		;;  
 	*)
 		echo "Command $command not recognized."
 		exit 1
